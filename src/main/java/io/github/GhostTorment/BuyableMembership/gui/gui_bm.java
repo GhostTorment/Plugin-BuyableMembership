@@ -51,7 +51,7 @@ public class gui_bm implements Listener {
 
     @EventHandler
     public void onInventoryClick(final InventoryClickEvent e) {
-        if (e.getInventory() != gui) return;
+        if (e.getClickedInventory() != gui) return;
 
         e.setCancelled(true);
 
