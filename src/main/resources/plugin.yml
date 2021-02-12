@@ -8,8 +8,8 @@ commands:
     usage: /bm
     permission: buyablemembership.command
 
-  bmadmin:
-    description: : "Opens the BuyableMembership Admin Menu"
-    usage: /bmadmin
-    permission: buyablemembership.admin
-    permission-message: "You don't have access to that!"
+#  bmadmin:
+#    description: : "Opens the BuyableMembership Admin Menu"
+#    usage: /bmadmin
+#    permission: buyablemembership.admin
+#    permission-message: "You don't have access to that!"
