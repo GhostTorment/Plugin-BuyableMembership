@@ -1,15 +1,15 @@
-name: BuyableMembership
-main: io.github.GhostTorment.BuyableMembership.buyablemembership
-version: 1.0
+  name: BuyableMembership
+  main: io.github.GhostTorment.BuyableMembership.buyablemembership
+  version: 1.0
 
-commands:
-  bm:
-    description: "Opens the BuyableMembership Menu"
-    usage: /bm
-    permission: buyablemembership.command
+  commands:
+      bm:
+        description: "Opens the BuyableMembership Menu"
+        usage: /bm
+        permission: buyablemembership.command
 
-#  bmadmin:
-#    description: : "Opens the BuyableMembership Admin Menu"
-#    usage: /bmadmin
-#    permission: buyablemembership.admin
-#    permission-message: "You don't have access to that!"
+  #  bmadmin:
+  #    description: : "Opens the BuyableMembership Admin Menu"
+  #    usage: /bmadmin
+  #    permission: buyablemembership.admin
+  #    permission-message: "You don't have access to that!"
