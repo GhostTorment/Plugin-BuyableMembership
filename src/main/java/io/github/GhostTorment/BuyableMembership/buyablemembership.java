@@ -20,9 +20,9 @@ public class buyablemembership extends JavaPlugin {
         if (!setupEconomy()) {
             log.severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
-            Objects.requireNonNull(getCommand("bm")).setExecutor(new cmd_bm());
             return;
         }
+        Objects.requireNonNull(getCommand("bm")).setExecutor(new cmd_bm());
     }
     @Override
     public void onDisable() {
