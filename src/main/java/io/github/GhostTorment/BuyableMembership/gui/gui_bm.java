@@ -1,5 +1,6 @@
 package io.github.GhostTorment.BuyableMembership.gui;
 
+import com.sun.tools.javac.Main;
 import de.themoep.inventorygui.InventoryGui;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -13,11 +14,11 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import io.github.GhostTorment.BuyableMembership.gui.gui_bm_confirm;
-
 import java.util.Arrays;
 
 public class gui_bm implements Listener {
     private final Inventory gui;
+
 
     public gui_bm() {
         gui = Bukkit.createInventory(null, 27, "Buy Membership");

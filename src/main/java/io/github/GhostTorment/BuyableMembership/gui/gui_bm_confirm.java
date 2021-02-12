@@ -52,7 +52,7 @@ public class gui_bm_confirm implements Listener {
 
     @EventHandler
     public void onInventoryClick(final InventoryClickEvent e) {
-        if (e.getClickedInventory() != gui) return;
+        if (e.getInventory() != gui) return;
 
         e.setCancelled(true);
 

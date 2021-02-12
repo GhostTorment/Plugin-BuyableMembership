@@ -1,6 +1,8 @@
 package io.github.GhostTorment.BuyableMembership;
 
 import io.github.GhostTorment.BuyableMembership.command.cmd_bm;
+import io.github.GhostTorment.BuyableMembership.gui.gui_bm;
+import io.github.GhostTorment.BuyableMembership.gui.gui_bm_confirm;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
@@ -22,6 +24,8 @@ public class buyablemembership extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
+        getServer().getPluginManager().registerEvents(new gui_bm(), this);
+        getServer().getPluginManager().registerEvents(new gui_bm_confirm(), this);
         Objects.requireNonNull(getCommand("bm")).setExecutor(new cmd_bm());
     }
     @Override
