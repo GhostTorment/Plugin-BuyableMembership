@@ -21,6 +21,7 @@ public class gui_bm implements Listener {
 
     public gui_bm() {
         gui = Bukkit.createInventory(null, 27, "Buy Membership");
+        Bukkit.getServer().getConsoleSender().sendMessage("gui created");
         initializeItems();
     }
 
@@ -45,6 +46,7 @@ public class gui_bm implements Listener {
     //Open Inventory
     public void openInventory(final HumanEntity ent) {
         ent.openInventory(gui);
+        Bukkit.getServer().getConsoleSender().sendMessage("Open inv");
     }
 
     @EventHandler
